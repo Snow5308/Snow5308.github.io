@@ -1,0 +1,33 @@
+div {
+    overflow: hidden;
+}
+
+div p, div h2 {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#SoftwareDevelopment h2, #SoftwareDevelopment p{
+    width: 46%;
+    float: right;
+}
+
+#SoftwareDevelopment img{
+    width: 50%;
+    float: left;
+}
+
+#SystemAdministration h2, #SystemAdministration p {
+    width: 46%;
+    float: left;
+}
+
+#SystemAdministration img{
+    width: 50%;
+    float: right;
+}
+
+div a {
+    float: right;
+    margin-right: 2%;
+}
