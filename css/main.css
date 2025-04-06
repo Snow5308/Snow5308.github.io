@@ -1,0 +1,40 @@
+body {
+    background-color: lightgray;
+    margin: 0%;
+    font-family: monospace;
+    text-align: justify;
+}
+
+header, footer {
+    background-color: darkgreen;
+    color: white;
+    width: 100%;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0%;
+}
+
+h2 {
+    margin: 0%;
+}
+
+h2 p {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+nav ul {
+    margin: 0%;
+}
+
+footer p {
+    margin: 0%;
+}
