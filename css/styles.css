@@ -67,6 +67,7 @@ nav ul li a {
     text-align: center;
     color: white;
     text-decoration: none;
+    line-height: 350%; /*I have no idea where this value comes from. But it has the desired effect.*/
 }
 
 nav ul li a:hover {
@@ -74,7 +75,20 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-footer p {
-    margin: 0%;
+footer {
+    display: inline-block;
+}
+
+#pageInfo {
+    width: 38%;
+    margin-left: 2%;    
+    display:inline-block;
+}
+
+#siteInfo {
+    width: 58%;
+    margin-right: 2%;
+    float: right;
+    display:inline-block;
 }
 
