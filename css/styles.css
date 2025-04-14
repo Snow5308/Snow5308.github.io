@@ -24,11 +24,13 @@ main {
     width: 80%;
     margin: auto;
     background-color: white;
+    overflow: auto; /* reference: https://stackoverflow.com/questions/13573653/css-margin-terror-margin-adds-space-outside-parent-element user j08691's answer.*/
 }
 
 h1 {
     text-align: center;
-    margin-top: 0%;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 h2 {
@@ -73,6 +75,7 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: forestgreen;
+    color: white;
     text-decoration: underline;
 }
 
@@ -91,5 +94,21 @@ footer {
     margin-right: 2%;
     float: right;
     display:inline-block;
+}
+
+address a {
+    color: white;
+}
+
+address a:hover {
+    color: gray;
+}
+
+a {
+    color: darkblue;
+}
+
+a:hover {
+    color: blue;
 }
 
