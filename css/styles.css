@@ -14,6 +14,7 @@ header, footer {
 
 header {
     height: 50px;
+    overflow: hidden;
 }
 
 header img {
@@ -110,5 +111,22 @@ a {
 
 a:hover {
     color: blue;
+}
+
+#icon {
+    display: inline-flex;
+    height: 50px;
+    width: 15%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-size: x-large;
+    padding-left: 1%;
+    font-weight: bold;
+}
+
+#icon:hover {
+    background-color: forestgreen;
 }
 
