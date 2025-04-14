@@ -1,0 +1,17 @@
+.secondary {
+    border-top: 10px;
+    background-color: forestgreen;
+    width: 100%;
+}
+
+.secondary ul li a:hover {
+    background-color: green;    
+}
+
+#secondary2 ul li {
+    width: 50%;
+}
+
+#secondary3 ul li {
+    width: 33.33333%;
+}
