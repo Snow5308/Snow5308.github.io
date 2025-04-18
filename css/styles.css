@@ -146,3 +146,8 @@ span {
 main small {
     margin-left: 2%;
 }
+
+.learnmore {
+    float: right;
+    margin-right: 2%;
+}
