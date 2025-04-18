@@ -40,13 +40,22 @@ h1 {
     text-align: center;
     margin-top: 1em;
     margin-bottom: 1em;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 h2 {
     margin: 0%;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 h2 p {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+h3 {
     margin-left: 2%;
     margin-right: 2%;
 }
@@ -132,4 +141,8 @@ address a:hover {
 
 span {
     margin-right: 2px;
+}
+
+main small {
+    margin-left: 2%;
 }
