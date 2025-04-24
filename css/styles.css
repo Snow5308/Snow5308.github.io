@@ -56,8 +56,8 @@ h2 p {
 }
 
 h3 {
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 nav {
@@ -152,7 +152,7 @@ main small {
     margin-right: 2%;
 }
 
-h3, ul {
+ul {
     margin-left: 5%;
     margin-right: 5%;
 }
