@@ -8,7 +8,7 @@ div p, div h2 {
 }
 
 #SoftwareDevelopment h2, #SoftwareDevelopment p{
-    width: 50%;
+    width: 46%;
     float: right;
 }
 
@@ -18,7 +18,7 @@ div p, div h2 {
 }
 
 #SystemAdministration h2, #SystemAdministration p {
-    width: 50%;
+    width: 46%;
     float: left;
 }
 
