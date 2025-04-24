@@ -3,12 +3,12 @@ div {
 }
 
 div p, div h2 {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 #SoftwareDevelopment h2, #SoftwareDevelopment p{
-    width: 40%;
+    width: 46%;
     float: right;
 }
 
@@ -18,7 +18,7 @@ div p, div h2 {
 }
 
 #SystemAdministration h2, #SystemAdministration p {
-    width: 40%;
+    width: 46%;
     float: left;
 }
 
