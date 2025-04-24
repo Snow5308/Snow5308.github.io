@@ -151,3 +151,8 @@ main small {
     float: right;
     margin-right: 2%;
 }
+
+h3, ul {
+    margin-left: 5%;
+    margin-right: 5%;
+}
