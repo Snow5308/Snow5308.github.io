@@ -30,10 +30,59 @@
 
         <main>
             <h1>System Administration</h1>
-            <h2>System Administration Overview</h2>
-            <h2>Overview of Server History</h2>
-            <h2>Overview of Server Setup</h2>
-            <h2>Overview of Technologies</h2>
+            <p>
+                Many of the courses I have taken have neglected the topic of system administration, 
+                so it has been a personal interest and hobby of mine. Over the years, I have developed 
+                a small homelab, a small server system designed for home use, which I use for tinkering, 
+                learning, and hosting a handful of services.
+            </p>
+            <h2>Server History</h2>
+            <p>
+                Around the time that I started getting interested in software development, I also started getting interested in 
+                servers and what they could do. From this, I started looking into what I wanted to do with the limited hardware 
+                at my disposal, an old Compaq computer. After putting a hard drive in it and getting a flash drive with <a href="https://www.truenas.com/freenas/">FreeNAS</a>, 
+                I started my system administration journey. 
+            </p>
+            <p>
+                After getting started with a network-attached storage (<abbr>NAS</abbr>) system, I started learning virtual machines, and 
+                eventually got better hardware. I soon started working with <a href="https://www.proxmox.com/en/">Proxmox</a> and hosted the NAS on a virtual machine. 
+                At the time, I lacked knowledge of containers, so most of my dealings were with virtual machines. I now have 
+                a better grasp of containers, and I have started migrating most of my services to containers.
+                <br>
+                <br>
+                <a href="/system_administration/history.html" class="learnmore">Learn more &raquo;</a>
+            </p>
+            <h2>Server Setup</h2>
+            <p>
+                At the moment, I have two computers running Proxmox in a cluster, five Raspberry Pi computers running <a href="https://docs.docker.com/engine/swarm/">Docker Swarm</a>, 
+                and a desktop running a <a href="https://www.pfsense.org/">pfSense</a> firewall. These devices are connected by a 24-port switch, and wifi is provided 
+                by a router that has been repurposed into an access point. Due to computers being fairly expensive, most of these 
+                parts are used or older.
+            </p>
+            <p>
+                When it comes to the software that these machines run, I have Proxmox as my preferred hypervisor, <a href="https://www.debian.org/">Debian</a> as my 
+                preferred operating system (OS), pfSense for the firewall, and Docker for containers. <a href="https://ubuntu.com/">Ubuntu</a> was more convenient 
+                for the Raspberry Pi computers, so they run Ubuntu as their OS.
+                <br>
+                <br>
+                <a href="/system_administration/setup.html" class="learnmore">Learn more &raquo;</a>
+            </p>
+            <h2>Technologies</h2>
+            <p>
+                The virtualization technologies that I use in my homelab include Proxmox, <a href="https://www.docker.com/">Docker</a>, and Docker Swarm. Proxmox is 
+                installed on my servers to host any virtual machines that I need, while Docker is hosted in a virtual machine to 
+                provide any containers that I need. The Raspberry Pi computers are running Docker Swarm to allow me to learn more 
+                about container orchestration.
+            </p>
+            <p>
+                My preferred operating system is Debian, and most virtual machines that I run are installed with Debian as the OS. 
+                I have worked with other operating systems as well, including <a href="https://archlinux.org/">Arch</a> and <a href="https://fedoraproject.org/">Fedora</a>, but these are more for particular 
+                use cases rather than general usage. For my firewall, pfSense is the OS, and for the servers themselves, the OS is 
+                Proxmox. The Raspberry Pi computers run Ubuntu, but this is a derivative of Debian.
+                <br>
+                <br>
+                <a href="/system_administration/technologies.html" class="learnmore">Learn more &raquo;</a>
+            </p>
         </main>
         
         <footer>
@@ -42,7 +91,7 @@
                     Author: <a href="/about/about.html">Connor Ramey</a><br>
                     Contact: <a href="mailto:cgramey@colostate.edu">cgramey@colostate.edu</a>
                 </address>
-                Updated: <time datetime="2025-04-06"> April 6, 2025</time>
+                Updated: <time datetime="2025-04-24"> April 24, 2025</time>
             </div>
             <div id="siteInfo">
                 <small>
