@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="/css/styles.css">
         <link rel="stylesheet" href="/css/doubleNav.css">
         <link rel="stylesheet" href="/css/regular.css">
+        <link rel="stylesheet" href="/css/basic_images.css">
     </head>
     <body>
         <header>
@@ -31,7 +32,57 @@
         <main>
             <h1>Server Setup</h1>
             <h2>Hardware Setup</h2>
+            <figure>
+                <img src="/img/Network_Diagram.drawio.png" alt="Network diagram showing the hardware layout of the homelab.">
+                <figcaption><small>Diagram created using <a href="https://app.diagrams.net/">draw.io</a>.</small></figcaption>
+            </figure>
+            <p>
+                My home network consists of two distinct sections: an area that allows users a typical home environment, and a 
+                more secure area that allows access to services provided by my servers. Nothing much of note happens with the 
+                regular section of the network, so it will not be discussed. Most of my homelab resides within the secured 
+                section, as it needs higher levels of security.
+            </p>
+            <p>
+                What makes this area more secure is that it is behind a <a href="https://www.pfsense.org/">pfSense</a> firewall. 
+                The firewall blocks malicious and unwanted network connections. Within the secured area, there is a WIFI access point 
+                that allows users to connect to the secured area and access content that is inaccessible in the unsecured section. 
+            </p>
+            <p>
+                The servers, named Ruby and Yang, provide most of the services, with Ruby being the primary server. The main service 
+                that Ruby provides is a <abbr>NAS</abbr>, or <dfn>network attached storage</dfn>, which allows users to store and access 
+                files on the server from their personal computer. I keep most of my files on this machine, and I frequently back up files 
+                here. Several other services are available on Ruby, such as <a href="https://pi-hole.net/">Pi-hole</a> to filter ads, and 
+                a <a href="https://www.mysql.com/">MySQL</a> database server. Yang, on the other hand, provides fewer services and is mostly 
+                used to back up the data on Ruby, in case the data is corrupted or wrongly deleted. Data stored on both servers is kept in a 
+                <dfn>RAID6 storage pool</dfn>, which means that multiple storage drives are used in combination, and up to two of these drives 
+                can fail without damage to the data occurring.
+            </p>
+            <p>
+                Finally, there is also a set of five Raspberry Pi Computers. These machines are kept mainly for learning, and are expendable 
+                as they do not host any major services. This way, I can experiment with new software and clustering without worrying about 
+                taking down an important service.
+            </p>
             <h2>Software Setup</h2>
+            <figure>
+                <img src="/img/Software_Diagram.drawio.png" alt="Software diagram showing how the software interacts in the homelab.">
+                <figcaption><small>Diagram created using <a href="https://app.diagrams.net/">draw.io</a>.</small></figcaption>
+            </figure>
+            <p>
+                Primarily, the servers Ruby and Yang host the most important services. Both Ruby and Yang run the <dfn>hypervisor</dfn> 
+                <a href="https://www.proxmox.com/en/"></a>Proxmox, which means they are able to host multiple computers on one machine by 
+                emulating the needed hardware. They are also clustered together, so access and communication between the servers is simplified. 
+                Most services are hosted on a <dfn>virtual machine</dfn>, an emulated computer, on Ruby that runs 
+                <a href="https://www.docker.com/">Docker</a>. This Docker instance is managed by another virtual machine on Yang that is running 
+                <a href="https://www.portainer.io/">Portainer</a>. Outside of the virtual machines, Ruby also provides the NAS, and Yang provides 
+                backup services by pulling the data to its own storage pool from Ruby’s NAS.
+            </p>
+            <p>
+                The Raspberry Pi computers are not doing much at the moment, but I plan to cluster them and use them for learning specific 
+                technologies that I am interested in. <a href="https://hadoop.apache.org/">Hadoop</a> and 
+                <a href="https://kubernetes.io/">Kubernetes</a> are the two main plans I have for the Raspberry Pi computers, with Hadoop being 
+                focused on distributed data analytics, and Kubernetes being focused on container orchestration. 
+            </p>
+
         </main>
 
         <footer>
@@ -40,7 +91,7 @@
                     Author: <a href="/about/about.html">Connor Ramey</a><br>
                     Contact: <a href="mailto:cgramey@colostate.edu">cgramey@colostate.edu</a>
                 </address>
-                Updated: <time datetime="2025-04-06"> April 6, 2025</time>
+                Updated: <time datetime="2025-04-30"> April 30, 2025</time>
             </div>
             <div id="siteInfo">
                 <small>
