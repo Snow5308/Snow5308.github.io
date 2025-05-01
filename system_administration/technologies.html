@@ -29,8 +29,37 @@
         </header>
         <main>
             <h1>Technologies</h1>
-            <h2>Virtualization</h2>
             <h2>Operating Systems</h2>
+            <p>
+                Operating systems (<abbr>OS</abbr>) are the software that make a computer usable, and some examples are Windows and the 
+                various distributions of Linux. In my homelab, most of the machines run some distribution of Linux. 
+                <a href="https://www.proxmox.com/en/">Proxmox</a> is used on my servers, and <cite>Proxmox</cite> claims to be based on Debian, 
+                a Linux distribution. For virtual machines, I primarily use <a href="https://www.debian.org/">Debian</a> when possible, but I 
+                have tried other distributions like <a href="https://archlinux.org/">Arch</a> and <a href="https://fedoraproject.org/">Fedora</a>. 
+                For my Raspberry Pi computers, <a href="https://ubuntu.com/">Ubuntu</a> is used due to its convenience. The one outlier for my 
+                usage of Linux-based operating systems is my firewall, which uses the FreeBSD-based 
+                <cite><a href="https://www.pfsense.org/">pfSense</a></cite>.
+            </p>
+            <h2>Virtualization</h2>
+            <p>
+                <dfn>Virtualization</dfn> is a huge component of working with servers, as it allows for one computer to run multiple operating 
+                systems, essentially multiple computers, on one physical machine. <dfn>Virtual machines</dfn> make up one of the main forms of 
+                virtualization, which are entire other guest computers run on a host computer via emulated hardware. <dfn>Containers</dfn> are 
+                another form of virtualization, and they work by having an environment like an OS that utilizes the host OS to make containers 
+                significantly less resource-intensive than virtual machines.
+            </p>
+            <p>
+                For my virtual machine needs, I use Proxmox as my hypervisor. <dfn>Hypervisors</dfn> 
+                are the software that enable the creation, management, and usage of virtual machines. Proxmox is rich in useful features, such 
+                as LXC container management, virtual machine management, storage pool creation, and clustering, which is why I have felt no need 
+                to try other hypervisors.
+            </p>
+            <p>
+                For containerization, I use <a href="https://www.docker.com/">Docker</a> because it is popular and has a large number of 
+                containers to choose from on <a href="https://hub.docker.com/">Docker Hub</a>. Docker is interacted with exclusively by 
+                the command line, so I use a <a href="https://www.portainer.io/">Portainer</a> container run on Docker to give my Docker 
+                setup a pleasant graphical user interface (<abbr>GUI</abbr>). 
+            </p>
             <h2>Clusters</h2>
         </main>
         
@@ -40,7 +69,7 @@
                     Author: <a href="/about/about.html">Connor Ramey</a><br>
                     Contact: <a href="mailto:cgramey@colostate.edu">cgramey@colostate.edu</a>
                 </address>
-                Updated: <time datetime="2025-04-24"> April 24, 2025</time>
+                Updated: <time datetime="2025-04-30"> April 30, 2025</time>
             </div>
             <div id="siteInfo">
                 <small>
