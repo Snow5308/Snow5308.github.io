@@ -61,6 +61,26 @@
                 setup a pleasant graphical user interface (<abbr>GUI</abbr>). 
             </p>
             <h2>Clusters</h2>
+            <p>
+                At the moment, two different clustering technologies are used in my homelab, Proxmox clustering and 
+                <a href="https://docs.docker.com/engine/swarm/">Docker Swarm</a>. <dfn>Clustering</dfn> computers means 
+                multiple machines can interact and share resources or information to work together. 
+            </p>
+            <p>
+                For Proxmox, clustering allows both of my servers to communicate, which includes several nice features. 
+                This is mainly a convenience, as the primary benefits is being able to control both servers with one login 
+                rather than having to log in to both machines individually. However, it also allows for virtual machines to 
+                be migrated from one machine to another with ease, which allows for better resource management. Docker Swarm 
+                acts similarly to a Proxmox cluster in the manner that it distributes containers across the cluster to use the 
+                resources available to the cluster.
+            </p>
+            <p>
+                I am also looking into setting up <a href="https://kubernetes.io/">Kubernetes</a> and 
+                <a href="https://hadoop.apache.org/">Hadoop</a> clusters. With Kubernetes, I am hoping to learn a different container 
+                orchestration platform and the technologies that come with it. Hadoop is a technology I have been interested in since my 
+                <a href="https://www.cs.colostate.edu/~csx55/">Distributed Systems</a> course, and I hope to gain more practice with this 
+                technology.
+            </p>
         </main>
         
         <footer>
@@ -69,7 +89,7 @@
                     Author: <a href="/about/about.html">Connor Ramey</a><br>
                     Contact: <a href="mailto:cgramey@colostate.edu">cgramey@colostate.edu</a>
                 </address>
-                Updated: <time datetime="2025-04-30"> April 30, 2025</time>
+                Updated: <time datetime="2025-05-02"> May 2, 2025</time>
             </div>
             <div id="siteInfo">
                 <small>
