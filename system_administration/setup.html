@@ -73,10 +73,10 @@
             </figure>
             <p>
                 Primarily, the servers Ruby and Yang host the most important services. Both Ruby and Yang run the <dfn>hypervisor</dfn> 
-                <a href="/system_administration//technologies.html#virtualization">Proxmox</a>, which means they are able to host multiple computers on one machine by 
+                <a href="https://www.proxmox.com/en/">Proxmox</a>, which means they are able to host multiple computers on one machine by 
                 emulating the needed hardware. They are also clustered together, so access and communication between the servers is simplified. 
                 Most services are hosted on a <dfn>virtual machine</dfn>, an emulated computer, on Ruby that runs 
-                <a href="https://www.docker.com/">Docker</a>. This Docker instance is managed by another virtual machine on Yang that is running 
+                <a href="https://www.docker.com/">Docker</a>. This <a href="https://www.docker.com/">Docker</a> instance is managed by another virtual machine on Yang that is running 
                 <a href="https://www.portainer.io/">Portainer</a>. Outside of the virtual machines, Ruby also provides the NAS, and Yang provides 
                 backup services by pulling the data to its own storage pool from Ruby’s NAS.
             </p>

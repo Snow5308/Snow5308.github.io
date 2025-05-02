@@ -36,7 +36,7 @@
             <p>
                 Operating systems (<abbr>OS</abbr>) are the software that make a computer usable, and some examples are Windows and the 
                 various distributions of Linux. In my homelab, most of the machines run some distribution of Linux. 
-                <a href="https://www.proxmox.com/en/">Proxmox</a> is used on my servers, and <cite>Proxmox</cite> claims to be based on Debian, 
+                <a href="https://www.proxmox.com/en/">Proxmox</a> is used on my servers, and <cite><a href="https://www.proxmox.com/en/">Proxmox</a></cite> claims to be based on Debian, 
                 a Linux distribution. For virtual machines, I primarily use <a href="https://www.debian.org/">Debian</a> when possible, but I 
                 have tried other distributions like <a href="https://archlinux.org/">Arch</a> and <a href="https://fedoraproject.org/">Fedora</a>. 
                 For my Raspberry Pi computers, <a href="https://ubuntu.com/">Ubuntu</a> is used due to its convenience. The one outlier for my 
@@ -52,20 +52,20 @@
                 significantly less resource-intensive than virtual machines.
             </p>
             <p>
-                For my virtual machine needs, I use Proxmox as my hypervisor. <dfn>Hypervisors</dfn> 
-                are the software that enable the creation, management, and usage of virtual machines. Proxmox is rich in useful features, such 
+                For my virtual machine needs, I use <a href="https://www.proxmox.com/en/">Proxmox</a> as my hypervisor. <dfn>Hypervisors</dfn> 
+                are the software that enable the creation, management, and usage of virtual machines. <a href="https://www.proxmox.com/en/">Proxmox</a> is rich in useful features, such 
                 as LXC container management, virtual machine management, storage pool creation, and clustering, which is why I have felt no need 
                 to try other hypervisors.
             </p>
             <p>
                 For containerization, I use <a href="https://www.docker.com/">Docker</a> because it is popular and has a large number of 
-                containers to choose from on <a href="https://hub.docker.com/">Docker Hub</a>. Docker is interacted with exclusively by 
-                the command line, so I use a <a href="https://www.portainer.io/">Portainer</a> container run on Docker to give my Docker 
+                containers to choose from on <a href="https://hub.docker.com/">Docker Hub</a>. <a href="https://www.docker.com/">Docker</a> is interacted with exclusively by 
+                the command line, so I use a <a href="https://www.portainer.io/">Portainer</a> container run on <a href="https://www.docker.com/">Docker</a> to give my <a href="https://www.docker.com/">Docker</a> 
                 setup a pleasant graphical user interface (<abbr>GUI</abbr>). 
             </p>
             <h2>Clusters</h2>
             <p>
-                At the moment, two different clustering technologies are used in my homelab, Proxmox clustering and 
+                At the moment, two different clustering technologies are used in my homelab, <a href="https://www.proxmox.com/en/">Proxmox</a> clustering and 
                 <a href="https://docs.docker.com/engine/swarm/">Docker Swarm</a>. <dfn>Clustering</dfn> computers means 
                 multiple machines can interact and share resources or information to work together. 
             </p>
@@ -73,7 +73,7 @@
                 For Proxmox, clustering allows both of my servers to communicate, which includes several nice features. 
                 This is mainly a convenience, as the primary benefits is being able to control both servers with one login 
                 rather than having to log in to both machines individually. However, it also allows for virtual machines to 
-                be migrated from one machine to another with ease, which allows for better resource management. Docker Swarm 
+                be migrated from one machine to another with ease, which allows for better resource management. <a href="https://docs.docker.com/engine/swarm/">Docker Swarm</a> 
                 acts similarly to a Proxmox cluster in the manner that it distributes containers across the cluster to use the 
                 available resources.
             </p>
