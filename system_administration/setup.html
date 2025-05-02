@@ -31,6 +31,10 @@
 
         <main>
             <h1>Server Setup</h1>
+            <p>
+                Primarily, my home lab is designed around two main servers, but a small cluster of Raspberry Pi computers is also used to provide 
+                an environment for tinkering.
+            </p>
             <h2>Hardware Setup</h2>
             <figure>
                 <img src="/img/Network_Diagram.drawio.png" alt="Network diagram showing the hardware layout of the homelab.">
@@ -69,7 +73,7 @@
             </figure>
             <p>
                 Primarily, the servers Ruby and Yang host the most important services. Both Ruby and Yang run the <dfn>hypervisor</dfn> 
-                <a href="https://www.proxmox.com/en/"></a>Proxmox, which means they are able to host multiple computers on one machine by 
+                <a href="/system_administration//technologies.html#virtualization">Proxmox</a>, which means they are able to host multiple computers on one machine by 
                 emulating the needed hardware. They are also clustered together, so access and communication between the servers is simplified. 
                 Most services are hosted on a <dfn>virtual machine</dfn>, an emulated computer, on Ruby that runs 
                 <a href="https://www.docker.com/">Docker</a>. This Docker instance is managed by another virtual machine on Yang that is running 
@@ -91,7 +95,7 @@
                     Author: <a href="/about/about.html">Connor Ramey</a><br>
                     Contact: <a href="mailto:cgramey@colostate.edu">cgramey@colostate.edu</a>
                 </address>
-                Updated: <time datetime="2025-04-30"> April 30, 2025</time>
+                Updated: <time datetime="2025-05-02"> May 2, 2025</time>
             </div>
             <div id="siteInfo">
                 <small>
